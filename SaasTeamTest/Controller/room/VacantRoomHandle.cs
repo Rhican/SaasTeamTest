@@ -1,4 +1,5 @@
 ﻿using SaasTeamTest.Models;
+using System;
 
 namespace SaasTeamTest.Controller
 {
@@ -8,6 +9,7 @@ namespace SaasTeamTest.Controller
             : base(room)
         {
             Room.Status = RoomStatus.Vacant;
+            Console.WriteLine("Room #" + room + " is now " + room.Status);
         }
 
         public RoomHandle Clean()

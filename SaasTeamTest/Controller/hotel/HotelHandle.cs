@@ -16,7 +16,7 @@ namespace SaasTeamTest.Controller.hotel
         public HotelHandle(String name)
         {
             Hotel = new Hotel(name);
-            int floor = 4; 
+            int floor = 4;
             int room = 5;
             Initialize(floor, room);
             SetupPath(floor, room);
@@ -29,6 +29,7 @@ namespace SaasTeamTest.Controller.hotel
         /// </summary>
         private void LoadRoomHandles()
         {
+            Console.WriteLine("Loading Room Hanldes...");
             Handles = new Dictionary<Room, RoomHandle>();
             foreach (var room in Path)
             {
@@ -50,6 +51,7 @@ namespace SaasTeamTest.Controller.hotel
                 }
                 Handles.Add(room, handle);
             }
+            Console.WriteLine("Room Hanldes are loaded\n\n");
         }
 
         /// <summary>
@@ -60,9 +62,10 @@ namespace SaasTeamTest.Controller.hotel
         /// <param name="roomsPerFloor">room count per floor</param>
         private void SetupPath(int floors, int roomsPerFloor)
         {
+            Console.WriteLine("Setting up Path (" + floors + "x" + roomsPerFloor + ")");
             Path = new LinkedList<Room>();
 
-            for(int f = 1; f <= floors; f++)
+            for (int f = 1; f <= floors; f++)
             {
                 try
                 {
@@ -75,7 +78,7 @@ namespace SaasTeamTest.Controller.hotel
                             code = (char)('A' + (roomsPerFloor - 1) - r);
                         }
                         var room = floor.Find(r => r.Name == code);
-                        if (room != null) 
+                        if (room != null)
                             Path.AddLast(room);
                     }
                 }
@@ -93,6 +96,7 @@ namespace SaasTeamTest.Controller.hotel
 
         public void Initialize(int floors, int roomsPerFloor)
         {
+            Console.WriteLine("Initializing Rooms (" + floors + "x" + roomsPerFloor + ")");
             for (int i = 1; i <= floors; i++)
             {
                 Floor f = new Floor(i);
@@ -119,7 +123,7 @@ namespace SaasTeamTest.Controller.hotel
 
             if (handle.CanAccess(UserRole.Staff))
             {
-                Handles[nextAvailableRoom] = ((AvailableRoomHandle)handle).CheckIn();                
+                Handles[nextAvailableRoom] = ((AvailableRoomHandle)handle).CheckIn();
             }
 
             return nextAvailableRoom;

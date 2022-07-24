@@ -11,6 +11,7 @@ namespace SaasTeamTest.Controller
             : base(room)
         {            
             Room.Status = RoomStatus.Available;
+            Console.WriteLine("Room #" + room + " is now " + room.Status);
         }
 
         public RoomHandle CheckIn()
