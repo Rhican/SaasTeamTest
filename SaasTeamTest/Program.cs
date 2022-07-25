@@ -24,7 +24,7 @@ namespace SaasTeamTest
             Random rand = new Random();
             int n = 5 * 4 - 1;
             List<Room> roomsToClean = new List<Room>();
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++) // Randomly change the rooms' status...
             {
                 Room room = hotelHandle.QuickCheckIn();
                 int targetStatus = rand.Next(0, (int)RoomStatus.Repair + 1);
@@ -32,7 +32,7 @@ namespace SaasTeamTest
                 {
                     case RoomStatus.Available:
                         hotelHandle.Checkout(room);
-                        //hotelHandle.Clean(room); // clean later so random test can continue
+                        //hotelHandle.Clean(room); // clean later(out of for loop scope) so random test can continue
                         roomsToClean.Add(room);
                         break;
                     case RoomStatus.Occupied:
@@ -58,17 +58,17 @@ namespace SaasTeamTest
                 hotelHandle.QuickCheckIn();
             }
             catch(Models.Error.NoRoomAvailableException)
-            {
+            {// Expected error.
                 Console.WriteLine("QuickCheckIn can not work when there is no room available!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.ToString());   // Assume only log error detail.
             }
 
             foreach (var room in roomsToClean)
             {
-                hotelHandle.Clean(room);
+                hotelHandle.Clean(room);    // clean those need to set back to available
             }
 
             var availableRooms = hotelHandle.AvailableRooms();
