@@ -4,7 +4,7 @@
     {
         Guest,
         HouseCleaner,
-        Repairer, 
+        Repairer,
         Staff
     }
 }

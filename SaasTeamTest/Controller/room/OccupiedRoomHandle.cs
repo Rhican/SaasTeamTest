@@ -19,7 +19,7 @@ namespace SaasTeamTest.Controller
 
         public override bool CanAccess(UserRole role)
         {
-            return role == UserRole.Guest || 
+            return role == UserRole.Guest ||
                    role == UserRole.HouseCleaner;
         }
     }

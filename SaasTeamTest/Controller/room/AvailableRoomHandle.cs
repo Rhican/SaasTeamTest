@@ -1,7 +1,5 @@
 ﻿using SaasTeamTest.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SaasTeamTest.Controller
 {
@@ -9,7 +7,7 @@ namespace SaasTeamTest.Controller
     {
         public AvailableRoomHandle(Room room)
             : base(room)
-        {            
+        {
             Room.Status = RoomStatus.Available;
             Console.WriteLine("Room #" + room + " is now " + room.Status);
         }

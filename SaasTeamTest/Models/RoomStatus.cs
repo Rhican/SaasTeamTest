@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SaasTeamTest.Models
+﻿namespace SaasTeamTest.Models
 {
     public enum RoomStatus
     {

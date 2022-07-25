@@ -24,11 +24,11 @@ namespace SaasTeamTest
             Random rand = new Random();
             int n = 5 * 4 - 1;
             List<Room> roomsToClean = new List<Room>();
-            for (int i = 0; i < n; i ++)
+            for (int i = 0; i < n; i++)
             {
                 Room room = hotelHandle.QuickCheckIn();
                 int targetStatus = rand.Next(0, (int)RoomStatus.Repair + 1);
-                switch((RoomStatus)targetStatus)
+                switch ((RoomStatus)targetStatus)
                 {
                     case RoomStatus.Available:
                         hotelHandle.Checkout(room);

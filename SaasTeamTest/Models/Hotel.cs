@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SaasTeamTest.Models
 {
     class Hotel
     {
-        public Hotel (string name)
+        public Hotel(string name)
         {
             Name = name;
         }
