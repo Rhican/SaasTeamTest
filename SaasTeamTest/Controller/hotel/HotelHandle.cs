@@ -1,4 +1,5 @@
 ﻿using SaasTeamTest.Models;
+using SaasTeamTest.Models.Error;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -112,7 +113,7 @@ namespace SaasTeamTest.Controller.hotel
         public Room QuickCheckIn()
         {
             Room nextAvailableRoom = Path.FirstOrDefault(r => r.Status == RoomStatus.Available);
-            if (nextAvailableRoom == null) throw new Exception("No Room is Available!");
+            if (nextAvailableRoom == null) throw new NoRoomAvailableException();
             bool found = Handles.TryGetValue(nextAvailableRoom, out RoomHandle handle);
             if (handle == null || !found)
             {
