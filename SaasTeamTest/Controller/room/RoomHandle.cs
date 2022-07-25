@@ -2,7 +2,7 @@
 
 namespace SaasTeamTest.Controller
 {
-    abstract class RoomHandle 
+    public abstract class RoomHandle 
     {
         public RoomHandle(Room room)
         {

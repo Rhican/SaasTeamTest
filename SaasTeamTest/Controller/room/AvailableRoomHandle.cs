@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SaasTeamTest.Controller
 {
-    class AvailableRoomHandle : RoomHandle
+    public class AvailableRoomHandle : RoomHandle
     {
         public AvailableRoomHandle(Room room)
             : base(room)

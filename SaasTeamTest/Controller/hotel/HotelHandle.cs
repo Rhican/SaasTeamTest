@@ -2,11 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SaasTeamTest.Controller.hotel
 {
-    sealed class HotelHandle : IHotelHandle
+    public sealed class HotelHandle : IHotelHandle
     {
         /// <summary>
         /// Default constructor,

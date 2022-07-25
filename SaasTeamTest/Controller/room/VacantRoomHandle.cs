@@ -3,7 +3,7 @@ using System;
 
 namespace SaasTeamTest.Controller
 {
-    class VacantRoomHandle : RoomHandle
+    public class VacantRoomHandle : RoomHandle
     {
         public VacantRoomHandle(Room room)
             : base(room)
