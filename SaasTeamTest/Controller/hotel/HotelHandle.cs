@@ -50,7 +50,7 @@ namespace SaasTeamTest.Controller.hotel
                 }
                 Handles.Add(room, handle);
             }
-            Console.WriteLine("Room Hanldes are loaded\n\n");
+            Console.WriteLine("Room Hanldes(" + Handles.Count + ") are loaded.\n\n");
         }
 
         /// <summary>
