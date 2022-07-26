@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BinaryTree.Data.Node">
+    <Position X="9.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.Data.ValueNode">
+    <Position X="12.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Data\ValueNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.Data.OperatorNode">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAgAABAAAAEAAAAACgAAABAAAAgCAKAAAAEIEA=</HashCode>
+      <FileName>Data\OperatorNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.Data.UnknownNode">
+    <Position X="4.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\UnknownNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.Data.PlusOperatorNode">
+    <Position X="8.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\PlusOperatorNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.Data.MinusOperatorNode">
+    <Position X="2" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\MinusOperatorNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.Data.MultiplyOperatorNode">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\MultiplyOperatorNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.Data.DivideOperatorNode">
+    <Position X="11" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\DivideOperatorNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BinaryTree.BinaryTreeProgram">
+    <Position X="2.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAwAIAIAAIAAAgAAIABAAAAAAEAAAAAARAAAAAA=</HashCode>
+      <FileName>BinaryTreeProgram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BinaryTree.Data.OperatorType">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAABAAABAAAAAAAAACAAAAAAABA=</HashCode>
+      <FileName>Data\OperatorType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
