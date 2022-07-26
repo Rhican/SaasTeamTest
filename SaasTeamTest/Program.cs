@@ -57,7 +57,7 @@ namespace SaasTeamTest
             {
                 hotelHandle.QuickCheckIn();
             }
-            catch(Models.Error.NoRoomAvailableException)
+            catch (Models.Error.NoRoomAvailableException)
             {// Expected error.
                 Console.WriteLine("QuickCheckIn can not work when there is no room available!");
             }
