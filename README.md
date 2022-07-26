@@ -5,7 +5,7 @@ This solution can be opened from visual studio, default version vs2019. It uses 
 This solution consists of 3 projects:
 
 1. SaaTeamTest - Question 1, Hotel  
-2. TestProject - Unit test project for item 1
+2. TestProject - Unit test project for other two projects
 3. BinaryTree - Question 2, Simple Math Expression
 
 
